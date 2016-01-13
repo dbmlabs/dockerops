@@ -1,0 +1,23 @@
+dig:
+ image: nginx-dig
+ ports:
+ - "80:80"
+ links:
+ - app1
+ - app2
+ - app3
+ - app4
+ - app5
+ command: nginx
+app1:
+ image: dig
+app2:
+ image: dig
+app3:
+ image: dig
+app4:
+ image: dig
+app5:
+ image: dig
+app6:
+ image: dig
